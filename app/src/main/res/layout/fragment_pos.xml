@@ -1,0 +1,467 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colormisti">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".View.Fragments.Pos_Fragment">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Point of Sale"
+            android:textSize="24sp"
+            android:textColor="@android:color/black"
+            android:padding="16dp"
+            android:background="@color/colorPrimary"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layoutCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:orientation="horizontal"
+            android:padding="3dp">
+
+            <EditText
+                android:id="@+id/editTextCustomerSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Search Customer"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/buttonSearchCustomer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSelectedCustomer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutCustomer"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/cardview_dark_background"
+                android:padding="5dp">
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Customer Name"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Phone"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:layout_width="40dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Address"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Actions"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSelectedCustomerRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewTitle"
+            android:orientation="horizontal"
+            android:layout_marginTop="150dp"
+            android:padding="3dp">
+
+            <EditText
+                android:id="@+id/editTextProductSearch"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Search Product"
+                android:inputType="text" />
+
+            <Button
+                android:id="@+id/buttonSearchProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutSelectedProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutCustomer"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp"
+            >
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/cardview_dark_background"
+                android:padding="5dp">
+
+
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Product Name"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quantity"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Price"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Subtotal"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="X"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutSelectedProductRowss"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCosts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutSelectedProduct"
+            android:orientation="horizontal"
+            android:layout_marginTop="60dp"
+            android:padding="8dp">
+
+            <!-- Shipping Cost Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="169dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Shipping Cost"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/editTextShippingCost"
+                    android:layout_width="169dp"
+                    android:layout_height="wrap_content"
+
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint=" Shipping Cost"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <!-- Labor Cost Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Labor Cost"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:id="@+id/editTextLaborCost"
+                    android:layout_width="169dp"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorAccent"
+                    android:hint="Labor Cost"
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <!-- Total Paid Section -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="129dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="Final Total"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewFinalTotal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:text=""
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@android:color/black">
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/layoutCosts"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <!-- First LinearLayout for Total Paid, Total Due, and Change Amount -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- Total Paid Section -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- TextView for Total Paid -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Total Paid"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- EditText for entering Total Paid -->
+                    <EditText
+                        android:id="@+id/editTextTotalPaid"
+                        android:layout_width="169dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:hint="Enter Total Paid"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <!-- Total Due Section -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="8dp">
+
+                    <!-- TextView for Total Due -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Due"
+                        android:layout_marginLeft="5dp"
+                        android:textSize="16sp"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold"/>
+
+                    <!-- EditText for entering Total Due -->
+                    <EditText
+                        android:id="@+id/editTextTotalDue"
+                        android:layout_width="169dp"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorAccent"
+                        android:hint="Enter Total Due"
+                        android:inputType="numberDecimal" />
+                </LinearLayout>
+
+                <!-- Change Amount Section -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="66dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <!-- TextView for Change Amount -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="Change Amount"
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+
+                    <!-- TextView to display Change Amount -->
+                    <TextView
+                        android:id="@+id/textViewChangeAmount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="4dp"
+                        android:text=""
+                        android:textColor="@android:color/black"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- Second LinearLayout for Payment Method Spinner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <!-- TextView for Payment Method -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Payment Method"
+                    android:textColor="@android:color/black"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Spinner for selecting Payment Method -->
+                <Spinner
+                    android:id="@+id/spinnerPaymentMethod"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="650dp"
+            android:layout_marginEnd="153dp"
+            android:text="Submit" />
+
+    </RelativeLayout>
+</ScrollView>

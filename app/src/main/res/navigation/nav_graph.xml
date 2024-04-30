@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.retail_shop_app.View.Fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/add_product_fragment"
+        android:name="com.example.retail_shop_app.View.Fragments.Add_product_fragment"
+        android:label="fragment_add_product_fragment"
+        tools:layout="@layout/fragment_add_product_fragment" >
+        <action
+            android:id="@+id/action_add_product_fragment_self"
+            app:destination="@id/add_product_fragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/view_Customer_Fragment"
+        android:name="com.example.retail_shop_app.View.Fragments.View_Customer_Fragment"
+        android:label="View_Customer_Fragment" />
+    <fragment
+        android:id="@+id/add_Customers_Fragment"
+        android:name="com.example.retail_shop_app.View.Fragments.Add_Customers_Fragment"
+        android:label="fragment_add__customers_"
+        tools:layout="@layout/fragment_add__customers_" >
+        <action
+            android:id="@+id/action_add_Customers_Fragment_self"
+            app:destination="@id/add_Customers_Fragment" />
+    </fragment>
+
+</navigation>

@@ -1,0 +1,11 @@
+<!-- res/drawable/table_cell_background.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+
+    <solid android:color="@color/lavender" />
+
+    <stroke
+        android:width="1dp"
+        android:color="@color/white" /> <!-- Border color -->
+</shape>

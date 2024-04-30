@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home"/>
+
+        <item
+            android:id="@+id/nav_add_product"
+            android:icon="@drawable/add_product_icon"
+            android:title="Add Product"/>
+
+        <item
+            android:id="@+id/nav_view_product"
+            android:icon="@drawable/view_product_icon"
+            android:title="View Product"/>
+
+
+        <item
+            android:id="@+id/nav_Pos"
+            android:icon="@drawable/pos_icon"
+            android:title="POS"/>
+
+        <item
+            android:id="@+id/nav_accounts"
+            android:icon="@drawable/accounts_icon"
+            android:title="Sells"/>
+
+        <item
+            android:id="@+id/nav_add_customers"
+            android:icon="@drawable/add_c_icon"
+            android:title="Add Customers"/>
+        <item
+            android:id="@+id/nav_view_customers"
+            android:icon="@drawable/view_c_icon"
+            android:title="View Customers"/>
+        <item
+            android:id="@+id/nav_Stuff"
+            android:icon="@drawable/stuff_icon"
+            android:title="Stuff"/>
+
+
+
+
+        <item
+            android:id="@+id/nav_Payment"
+            android:icon="@drawable/payment_icon"
+            android:title="Payment"/>
+    </group>
+    <item
+        android:title="">
+
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/baseline_album_24"
+                android:title="Logout"/>
+        </menu>
+
+    </item>
+
+</menu>

@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/white"
+
+    tools:context=".View.Fragments.HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="Welcome To Dashboard"
+                    android:textColor="#5E5E5E"
+                    android:textSize="24dp" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="4dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:background="@drawable/bg_view" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:text="You can get summary of our business Here."
+                android:textColor="#5E5E5E"
+                android:textSize="18dp" />
+
+            <!-- Add more views here -->
+
+            <!-- LinearLayout with horizontal orientation -->
+
+            <!-- LinearLayout with horizontal orientation -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_view"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <!-- Your CardViews -->
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="163dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Todays Sells"
+                            android:textColor="#5E5E5E"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:layout_width="66dp"
+                            android:layout_height="79dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/bag_money" />
+
+                        <TextView
+                            android:id="@+id/totalSellsTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textColor="#FF0000"
+                            android:textSize="15dp"
+
+
+                            /> <!-- Change this to your desired color -->
+
+
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="147dp"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Todays Profit"
+                            android:textColor="#5E5E5E"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:layout_width="66dp"
+                            android:layout_height="79dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:src="@drawable/holding_money_1" />
+
+                        <TextView
+                            android:id="@+id/todaysProfitTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textColor="#FF0000"
+                            android:textSize="15dp"
+
+
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/lg_view"
+                android:orientation="horizontal">
+
+                <!-- Your CardViews -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Today Due Money"
+                            android:textColor="#5E5E5E"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:layout_width="80dp"
+                            android:layout_height="72dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="0dp"
+                            android:src="@drawable/due_png" />
+
+                        <TextView
+                            android:id="@+id/todaysDueTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textColor="#FF0000"
+                            android:textSize="15dp"
+
+
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Net Earning (S-D+P)"
+                            android:textColor="#5E5E5E"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:layout_width="75dp"
+                            android:layout_height="72dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="0dp"
+                            android:src="@drawable/net_earning_png" />
+
+                        <TextView
+
+                            android:id="@+id/todaysNetEarningTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="0 taka"
+                            android:textAlignment="center"
+                            android:textColor="#FF0000"
+                            android:textSize="15dp"
+
+
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- Your TextViews and Views -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Top Due List"
+
+                    android:textColor="#5E5E5E"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:background="#7a8b8b8b">
+
+
+                </View>
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+
+                <LinearLayout
+                    android:id="@+id/dueContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Low Stock Alert -->
+
+
+                    <!-- Product name and quantity -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/customerNameTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Customer Name"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/customerDueTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Due"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+
+            <!-- LinearLayout with horizontal orientation -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:orientation="horizontal">
+
+                <!-- Your TextViews and Views -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Life time sells "
+                    android:textColor="#5E5E5E"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:background="#7a8b8b8b">
+
+
+                </View>
+
+            </LinearLayout>
+
+            <!-- LinearLayout with horizontal orientation -->
+            <LinearLayout
+                android:background="@drawable/fg_view"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal">
+
+                <!-- Your CardViews -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Lifetime Sells "
+                            android:textColor="#5E5E5E"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:layout_width="69dp"
+                            android:layout_height="80dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="0dp"
+                            android:src="@drawable/lifetime_sells_png" />
+
+                        <TextView
+                            android:id="@+id/LifetimeSellsTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="0 taka"
+                            android:textAlignment="center"
+                            android:textColor="#FF0000"
+                            android:textSize="15dp"
+
+
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="160dp"
+                    android:layout_height="120dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="2dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Life Time Profits"
+                            android:textColor="#5E5E5E"
+                            android:textSize="18dp" />
+
+                        <ImageView
+                            android:layout_width="69dp"
+                            android:layout_height="73dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="0dp"
+                            android:src="@drawable/lifetime_earning_png" />
+                        <TextView
+                            android:id="@+id/LifetimeProfitTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="2dp"
+                            android:layout_marginBottom="10dp"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textColor="#FF0000"
+                            android:textSize="15dp"
+
+
+                            />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <!-- Your TextViews and Views -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="Low Stock Alert "
+
+                    android:textColor="#5E5E5E"
+                    android:textSize="18dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:background="#7a8b8b8b">
+
+
+                </View>
+
+            </LinearLayout>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+
+                <LinearLayout
+                    android:id="@+id/productContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Low Stock Alert -->
+
+
+                    <!-- Product name and quantity -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/productNameTextView"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Product Name"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/productQuantityTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Quantity"
+                            android:textColor="#000000"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
